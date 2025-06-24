@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.caloriescheck.ui.CaloriesControl.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailAnalysis"
+            app:destination="@id/detailAnalysis" />
+        <action
+            android:id="@+id/action_navigation_home_to_calendar"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_fragmentAddEat"
+            app:destination="@id/fragmentAddEat" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_recipes"
+        android:name="com.example.caloriescheck.ui.recipes.RecipesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_recipes" >
+        <action
+            android:id="@+id/action_navigation_recipes_to_createNewFoodFragment"
+            app:destination="@id/createNewFoodFragment" />
+        <action
+            android:id="@+id/action_navigation_recipes_to_oneFoodFragment"
+            app:destination="@id/oneFoodFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.caloriescheck.ui.account.AccountFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_detailAnalysis"
+            app:destination="@id/detailAnalysis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailAnalysis"
+        android:name="com.example.caloriescheck.ui.CaloriesControl.DetailAnalysis"
+        android:label="DetailAnalysis"
+        tools:layout="@layout/fragment_detail_analysis"/>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.caloriescheck.ui.CaloriesControl.Calendar"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/fragmentAddEat"
+        android:name="com.example.caloriescheck.AddingEats.FragmentAddEat"
+        android:label="fragment_add_eat"
+        tools:layout="@layout/fragment_add_eat" >
+        <action
+            android:id="@+id/action_fragmentAddEat_to_createNewFoodFragment2"
+            app:destination="@id/createNewFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.caloriescheck.startFragments.CreateAccountFragment"
+        android:label="create_account_fragment"
+        tools:layout="@layout/create_account_fragment" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_selectAGoalFragment"
+            app:destination="@id/selectAGoalFragment" />
+        <action
+            android:id="@+id/action_createAccountFragment_to_authenticationAccountFragment"
+            app:destination="@id/authenticationAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectAGoalFragment"
+        android:name="com.example.caloriescheck.startFragments.SelectAGoalFragment"
+        android:label="fragment_select_a_goal"
+        tools:layout="@layout/fragment_select_a_goal" >
+        <action
+            android:id="@+id/action_selectAGoalFragment_to_setStartParametersFragment"
+            app:destination="@id/setStartParametersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setStartParametersFragment"
+        android:name="com.example.caloriescheck.startFragments.SetStartParametersFragment"
+        android:label="set_start_parameters_fragment"
+        tools:layout="@layout/set_start_parameters_fragment" >
+        <action
+            android:id="@+id/action_setStartParametersFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticationAccountFragment"
+        android:name="com.example.caloriescheck.startFragments.AuthenticationAccountFragment"
+        android:label="fragment_authentication_account"
+        tools:layout="@layout/fragment_authentication_account" >
+        <action
+            android:id="@+id/action_authenticationAccountFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewFoodFragment"
+        android:name="com.example.caloriescheck.ui.recipes.CreateNewFoodFragment"
+        android:label="fragment_create_new_food"
+        tools:layout="@layout/fragment_create_new_food" />
+    <fragment
+        android:id="@+id/oneFoodFragment"
+        android:name="com.example.caloriescheck.ui.recipes.OneFoodFragment"
+        android:label="fragment_one_food"
+        tools:layout="@layout/fragment_one_food" />
+</navigation>

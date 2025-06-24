@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">Calories Check</string>
+    <string name="title_home">Дневник</string>
+    <string name="title_dashboard">Рецепты</string>
+    <string name="title_notifications">Профиль</string>
+    <string name="analiz">Анализ</string>
+    <string name="analiz2">АНАЛИЗ</string>
+    <string name="podrobnie">Подробнее</string>
+    <string name="ygkevod">Углеводы</string>
+    <string name="belki">Белки</string>
+    <string name="giri">Жиры</string>
+    <string name="rec_bl">Рекомендуемые блюда</string>
+    <string name="bolshe">БОЛЬШЕ</string>
+    <string name="Pitanie">Питание</string>
+    <string name="more">ЕЩЁ</string>
+    <string name="Weight_measurements">Замеры веса</string>
+    <string name="Drinking_water">Выпитая вода</string>
+    <string name="Weight">Вес</string>
+    <string name="water">Вода</string>
+    <string name="Notes">Заметки</string>
+    <string name="button_Notes_text">Как прошёл ваш день?</string>
+    <string name="Add_Notes">Добавить</string>
+    <string name="Breakfast">Завтрак</string>
+    <string name="Lunch">Обед</string>
+    <string name="Dinner">Ужин</string>
+    <string name="Snack">Перекус</string>
+    <string name="Products">Продукты</string>
+    <string name="Complex">Комплекс</string>
+    <string name="Recipe">Рецепт</string>
+    <string name="frequent">частые</string>
+    <string name="recent_events">недавние</string>
+    <string name="created">созданные</string>
+    <string name="Goal">Цель</string>
+    <string name="Calories">Калории</string>
+    <string name="monitoring_pit">Контроль питания</string>
+    <string name="Nutrients">Питательные вещества</string>
+    <string name="Now">Сейчас</string>
+    <string name="Extended_consumption_table">Расширенная таблица потребления</string>
+    <string name="Food_fibers">Пещевые волокна</string>
+    <string name="Sugar">Сахар</string>
+    <string name="fats_N">Насыщенные жиры</string>
+    <string name="fats_M">Мононенасыщенные жиры</string>
+    <string name="fats_P">Полиненасыщенные жиры</string>
+    <string name="fats_T">Трансжиры</string>
+    <string name="Search">Поиск</string>
+    <string name="free_eat">Бесплатные рецепты</string>
+    <string name="More_recipes">Больше рецептов</string>
+    <string name="Fish">Рыба</string>
+    <string name="Meat">Мясо</string>
+    <string name="Vegetables">Овощи</string>
+    <string name="Dish_day">Блюдо дня</string>
+    <string name="What_today">Что сегодня</string>
+    <string name="Try_it">Попробуйте!</string>
+    <string name="And_also">А ещё</string>
+    <string name="Food_intake">Приём пищи</string>
+    <string name="Salad">Салат</string>
+    <string name="Bakery_products">Выпечка</string>
+    <string name="Shake">Шейк</string>
+    <string name="Dessert">Десерт</string>
+    <string name="Clean_food">Чистое питание</string>
+    <string name="No_sugar">Без сахара</string>
+    <string name="Vegan">Веганский</string>
+    <string name="Sweets">Сладости</string>
+    <string name="Lactose_free">Без лактозы</string>
+    <string name="Gluten_free">Без глютена</string>
+    <string name="Energy_value">Энергетическая ценность</string>
+    <string name="kkal1">50–100 ккал</string>
+    <string name="kkal2">100–200 ккал</string>
+    <string name="kkal3">300–400 ккал</string>
+    <string name="kkal4">400–500 ккал</string>
+    <string name="kkal5">более 500 ккал</string>
+    <string name="other">Другое</string>
+    <string name="small_ingredints">Мало ингрединтов</string>
+    <string name="Easy">Лёгкий</string>
+    <string name="Quickly">Быстро</string>
+    <string name="go">На ходу</string>
+    <string name="My_Profile">Мой профиль</string>
+    <string name="Progress">Прогресс</string>
+    <string name="Edit_P">РЕДАКТИРОВАТЬ</string>
+    <string name="Do_it">Испытай себя</string>
+    <string name="Do_it_new">Добавить испытание</string>
+    <string name="not_chocolate">Никакого шоколада</string>
+    <string name="not_chocolate_30">Отказаться от шоколада на 30 дней</string>
+    <string name="not_sugar">Никакого сахара</string>
+    <string name="not_sugar_30">Отказаться от сахара на 30 дней</string>
+    <string name="not_fast_food">Никакого фаст-фуда</string>
+    <string name="not_fast_food_30">Отказаться от фаст-фуда на 30 дней</string>
+    <string name="not_coffee">Никакого кофе</string>
+    <string name="not_coffee_30">Отказаться от кофеина на 30 дней</string>
+    <string name="not_alcohol">Никакого алкоголя</string>
+    <string name="not_alcohol_30">Отказаться от алкоголя на 30 дней</string>
+    <string name="not_nicatine">Никакого никатина</string>
+    <string name="not_nicatine_30">Отказаться от курения на 30 дней</string>
+    <string name="first_step">Сделай первый шаг!</string>
+    <string name="loser">Я сдаюсь!</string>
+    <string name="kalendar">Календарь</string>
+    <string name="before_and_after">ДО И ПОСЛЕ</string>
+    <string name="CreateComplex">Создать комплекс</string>
+    <string name="CalorieAnalysis">Анализ калорий</string>
+    <string name="CreateRecipe">Создать рецепт</string>
+    <string name="Recipes">Рецепты</string>
+
+    <string name="settings">Настройки</string>
+    <string name="account">Аккаунт</string>
+    <string name="my_purposes">Мои цели</string>
+    <string name="water_follow">Отслеживаине выпетой воды</string>
+    <string name="notifications">Уведомления</string>
+    <string name="Save_profile">Сохранить профиль</string>
+    <string name="info_save">Зарегестрируйтесь, чтобы сохранить свой
+        прогресс или данные, или войдите
+        в свою учёьную запись </string>
+    <string name="resume">ПРОДОЛЖИТЬ</string>
+    <string name="Id_person">ID пользователя</string>
+    <string name="subscription">Подписка</string>
+    <string name="Throw_off">Сбросить</string>
+    <string name="exit">Выйти</string>
+    <string name="name">Имя</string>
+    <string name="vvod">введите</string>
+    <string name="surname">Фамилия</string>
+    <string name="city">Город</string>
+    <string name="paul">Пол</string>
+    <string name="W">Женский</string>
+    <string name="M">Мужской</string>
+    <string name="birth">Дата рождения</string>
+    <string name="height">Рост</string>
+    <string name="goals">Цели</string>
+    <string name="My_goals">Мои Цели</string>
+    <string name="weight_loss">Потеря веса</string>
+    <string name="build_muscle">Нарастить мышцы</string>
+    <string name="weight_maintenance">Поддержание веса</string>
+    <string name="initial_weight">Исходный вес</string>
+    <string name="desired_weight">Желаемый вес</string>
+    <string name="activity_level">Уровень активности</string>
+    <string name="goal_week">Цель на неделю</string>
+    <string name="calorie_goal">Цель по калориям</string>
+    <string name="steps">Шаги</string>
+    <string name="food_intake">Приём пищи</string>
+    <string name="Weigh_in">Взвешивание</string>
+    <string name="day_week">День недели</string>
+    <string name="time">Время</string>
+    <string name="purpose">Цель</string>
+    <string name="Volume">Объём</string>
+
+    <string name="What_goal">Какова ваша цель?</string>
+    <string name="Already_account">Уже есть аккаунт?</string>
+    <string name="Vxod">ВОЙТИ</string>
+    <string name="Enter_details">Введите ваши данные</string>
+    <string name="What_weight">Какой у вас сейчас вес?</string>
+    <string name="The_data_later">Данные можно будет изменить позже.</string>
+    <string name="What_target_weight">Какой ваш целевой вес?</string>
+    <string name="What_your_gender">Какой ваш пол?</string>
+    <string name="How_tall_you">Какой вас рост?</string>
+    <string name="What_your_birthday">Когда ваш день рождения?</string>
+    <string name="It_desirable_question">На этот вопрос желательно ответить.</string>
+    <string name="next">Далее</string>
+
+    <string-array name="genders">
+        <item>мужчина</item>
+        <item>женщина</item>
+    </string-array>
+
+    <string-array name="activity">
+        <item>Малоподвижный</item>
+        <item>Переодическая активность</item>
+        <item>Постоянная активность</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_adding_eats">Добавление еды</string>
+    <string name="text_activity1">Это первое Activity</string>
+    <string name="text_activity2">Это второе Activity</string>
+    <string name="text_activity3">Это третье Activity</string>
+    <string name="null_callories">0 ккал</string>
+    <string name="zeroprecent">0%</string>
+    <string name="zeroG">0.0 г</string>
+    <string name="UserName">Имя пользователя</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

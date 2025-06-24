@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".startFragments.SetStartParametersFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_ellipse_start"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter_details"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="64dp"
+        android:textAppearance="@style/gray_letters_3"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginTop="46dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/What_weight"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:text="Обязательное поле"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <EditText
+            android:id="@+id/send_weight"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_toStartOf="@+id/textView9"
+            android:gravity="end"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingVertical="5dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="кг"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/What_target_weight"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle2"
+            android:text="Обязательное поле"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <EditText
+            android:id="@+id/send_target_weight"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_toStartOf="@+id/textView10"
+            android:gravity="end"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:paddingVertical="5dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="кг"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/What_your_gender"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle3"
+            android:text="Обязательное поле"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:id="@+id/selectGender"
+            android:entries="@array/genders"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical="5dp"
+            android:gravity="end"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/How_tall_you"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle4"
+            android:text="Обязательное поле"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <EditText
+            android:id="@+id/send_height"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_toStartOf="@+id/textView11"
+            android:gravity="end"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:paddingVertical="5dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:text="м"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваша ежедневная активность"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle6"
+            android:text="Обязательное поле"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:id="@+id/selectActivity"
+            android:entries="@array/activity"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical="5dp"
+            android:gravity="end"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <TextView
+            android:id="@+id/txtTitle5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/What_your_birthday"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescriptor5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle5"
+            android:text="@string/The_data_later"
+            android:textAppearance="@style/gray_letters_2" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:id="@+id/send_birthday"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical="5dp"
+            android:inputType="date"
+            android:gravity="end"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Обязательные поля не заполнены"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/endCreateAccountButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounding_green3"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:text="@string/next"/>
+
+
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:titleTextColor="@color/actionBarColor"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="@color/actionBarColor"
+            android:textSize="17sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:onClick="OpenSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/plus1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/account"
+            android:textAppearance="@style/some_id_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:onClick="OpenSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/plus2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_person1" />
+
+        <TextView
+            android:id="@+id/txtTitle2"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_notifications"
+            android:textAppearance="@style/some_id_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_purposes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:onClick="OpenSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/plus3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_flag" />
+
+        <TextView
+            android:id="@+id/txtTitle3"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/my_purposes"
+            android:textAppearance="@style/some_id_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/water_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:onClick="OpenSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/plus4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_drink" />
+
+        <TextView
+            android:id="@+id/txtTitle4"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/water_follow"
+            android:textAppearance="@style/some_id_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:onClick="OpenSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <ImageView
+            android:id="@+id/plus5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:paddingVertical="5dp"
+            android:src="@drawable/ic_notifications" />
+
+        <TextView
+            android:id="@+id/txtTitle5"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/notifications"
+            android:textAppearance="@style/some_id_3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

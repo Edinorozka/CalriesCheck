@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.CaloriesControl.HomeFragment">
+
+        <ImageButton
+            android:id="@+id/openCalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_today_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/goalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_notifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/analiz"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openCalendarButton" />
+
+        <Button
+            android:id="@+id/openDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/transparent"
+            android:text="@string/podrobnie"
+            android:textColor="#167CD8"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goalButton" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frg"
+            android:name="com.example.caloriescheck.infoPanel.HomeScreenInfoPanel"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            tools:layout="@layout/fragment_home_screen_info_panel" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Pitanie"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frg"
+            />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/breakfast"
+            android:name="com.example.caloriescheck.fragmentBotton.FragmentButtonAddFood"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:layout="@layout/fragment_button_add_food"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/lunch"
+            android:name="com.example.caloriescheck.fragmentBotton.FragmentButtonAddFood"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:layout="@layout/fragment_button_add_food"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/dinner"
+            android:name="com.example.caloriescheck.fragmentBotton.FragmentButtonAddFood"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast"
+            tools:layout="@layout/fragment_button_add_food"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/snack"
+            android:name="com.example.caloriescheck.fragmentBotton.FragmentButtonAddFood"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lunch"
+            tools:layout="@layout/fragment_button_add_food"/>
+
+        <TextView
+            android:id="@+id/ves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:elevation="100dp"
+            android:gravity="top"
+            android:text="@string/Weight_measurements"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dinner" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rectangle_3"
+            android:layout_width="380dp"
+            android:layout_height="105dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/rounding_green"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ves">
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/Weight"
+                android:textAppearance="@style/white_books_1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цель: 0.0кг"
+                android:textAppearance="@style/white_books_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:text="0.0"
+                android:textAppearance="@style/white_books_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goal" />
+
+            <ImageButton
+                android:id="@+id/add_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_button_white_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/weight" />
+
+            <ImageButton
+                android:id="@+id/reduce_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_button_white_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/weight" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/water_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="@string/Drinking_water"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/water_fragment"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_text">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/water"
+                android:textAppearance="@style/water_books"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/targetWaterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цель: 2.00 литра"
+                android:textAppearance="@style/water_books"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/waterСonsumed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="63dp"
+                android:text="0.00 л"
+                android:textAppearance="@style/some_id"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/waterFromFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="19dp"
+                android:text="+ вода из пищи: 0 мл"
+                android:textAppearance="@style/water_books"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/Notes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="@string/Notes"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_fragment" />
+
+        <fragment
+            android:id="@+id/Notes_fragment"
+            android:name="com.example.caloriescheck.fragmentBotton.FragmentNotesButton"
+            android:layout_width="380dp"
+            android:layout_height="106dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="20dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Notes_text"
+            tools:layout="@layout/fragment_notes_button" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="80dp"
+            android:text="TextView"
+            android:textAppearance="@style/white_books_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Notes_fragment" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

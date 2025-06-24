@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="60dp"
+        tools:context=".ui.CaloriesControl.DetailAnalysis">
+
+        <include
+            android:id="@+id/detailToolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/Goal"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailToolbar" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frg"
+            android:name="com.example.caloriescheck.infoPanel.fragmentGoalIndicators"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:layout="@layout/fragment_goal_indicators"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/monitoring_pit"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frg" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frg2"
+            android:name="com.example.caloriescheck.infoPanel.InformationAboutTechniquesWriting"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:layout="@layout/fragment_information_about_techniques_writing"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Nutrients"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frg2" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frg3"
+            android:name="com.example.caloriescheck.infoPanel.FragmentChart"
+            android:layout_width="380dp"
+            android:layout_height="221dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:layout="@layout/fragment_chart"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Nutrients"
+            android:textAppearance="@style/some_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frg3" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frg4"
+            android:name="com.example.caloriescheck.infoPanel.FragmentConsumptionTable"
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/okryglenie_storon"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:layout="@layout/fragment_consumption_table"/>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="300dp"
+            android:text="yes"
+            android:textAppearance="@style/white_books_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frg4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

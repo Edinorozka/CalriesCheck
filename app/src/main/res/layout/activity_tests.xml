@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        app:titleTextColor="@color/actionBarColor"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Do_it_new"
+            android:textColor="@color/actionBarColor"
+            android:textSize="17sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:onClick="startTest"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle1"
+            android:text="@string/not_chocolate"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor1"
+            android:text="@string/not_chocolate_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus1"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle2"
+            android:text="@string/not_sugar"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor2"
+            android:text="@string/not_sugar_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus2"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle3"
+            android:text="@string/not_fast_food"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor3"
+            android:text="@string/not_fast_food_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus3"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle4"
+            android:text="@string/not_coffee"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor4"
+            android:text="@string/not_coffee_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle4"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus4"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle5"
+            android:text="@string/not_alcohol"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor5"
+            android:text="@string/not_alcohol_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus5"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle6"
+            android:text="@string/not_nicatine"
+            android:textAppearance="@style/some_id_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescriptor6"
+            android:text="@string/not_nicatine_30"
+            android:textAppearance="@style/gray_letters_2"
+            android:layout_below="@id/txtTitle6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus6"
+            android:src="@drawable/ic_button_white_black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:paddingVertical = "5dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
