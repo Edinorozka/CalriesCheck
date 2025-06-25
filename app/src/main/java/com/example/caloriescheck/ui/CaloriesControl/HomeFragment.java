@@ -21,6 +21,7 @@ import com.example.caloriescheck.R;
 import com.example.caloriescheck.databinding.FragmentHomeBinding;
 import com.example.caloriescheck.dto.Day;
 import com.example.caloriescheck.dto.User;
+import com.example.caloriescheck.enums.MealType;
 import com.example.caloriescheck.fragmentBotton.FragmentButtonAddFood;
 import com.example.caloriescheck.localStorage.EncryptedPreferences;
 
@@ -57,7 +58,9 @@ public class HomeFragment extends Fragment{
 
         binding.breakfast.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.fragmentAddEat);
+            Bundle args = new Bundle();
+            args.putString("type", MealType.BREAKFAST.toString());
+            navController.navigate(R.id.fragmentAddEat, args);
             FragmentButtonAddFood breakfast = (FragmentButtonAddFood) getChildFragmentManager().findFragmentById(R.id.breakfast);
             if (breakfast != null) {
                 breakfast.afterClick();
@@ -66,7 +69,9 @@ public class HomeFragment extends Fragment{
 
         binding.lunch.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.fragmentAddEat);
+            Bundle args = new Bundle();
+            args.putString("type", MealType.LUNCH.toString());
+            navController.navigate(R.id.fragmentAddEat, args);
             FragmentButtonAddFood lunch = (FragmentButtonAddFood) getChildFragmentManager().findFragmentById(R.id.lunch);
             if (lunch != null) {
                 lunch.afterClick();
@@ -75,7 +80,9 @@ public class HomeFragment extends Fragment{
 
         binding.dinner.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.fragmentAddEat);
+            Bundle args = new Bundle();
+            args.putString("type", MealType.DINNER.toString());
+            navController.navigate(R.id.fragmentAddEat, args);
             FragmentButtonAddFood dinner = (FragmentButtonAddFood) getChildFragmentManager().findFragmentById(R.id.dinner);
             if (dinner != null) {
                 dinner.afterClick();
@@ -84,7 +91,9 @@ public class HomeFragment extends Fragment{
 
         binding.snack.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
-            navController.navigate(R.id.fragmentAddEat);
+            Bundle args = new Bundle();
+            args.putString("type", MealType.SNACK.toString());
+            navController.navigate(R.id.fragmentAddEat, args);
             FragmentButtonAddFood snack = (FragmentButtonAddFood) getChildFragmentManager().findFragmentById(R.id.snack);
             if (snack != null) {
                 snack.afterClick();

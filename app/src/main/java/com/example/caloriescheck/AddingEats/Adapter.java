@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.caloriescheck.R;
 import com.example.caloriescheck.dto.Food;
+import com.example.caloriescheck.enums.MealType;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -20,9 +21,11 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
     private List<Food> listItem;
+    private MealType type;
 
-    public Adapter(List<Food> listItem) {
+    public Adapter(List<Food> listItem, MealType type) {
         this.listItem = listItem;
+        this.type = type;
     }
 
     @NonNull
@@ -41,7 +44,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         holder.cal.setText(item.getCalories() * 100 + " ккал.");
         holder.itemView.setOnClickListener(v -> {
             FragmentManager fragmentManager = ((AppCompatActivity) v.getContext()).getSupportFragmentManager();
-            SetWeightDialogFragment dialogFragment = SetWeightDialogFragment.newInstance(item);
+            SetWeightDialogFragment dialogFragment = SetWeightDialogFragment.newInstance(item, type);
             dialogFragment.show(fragmentManager, item.getName());
         });
     }

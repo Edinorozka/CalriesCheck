@@ -46,6 +46,7 @@ public class FragmentButtonAddFood extends Fragment {
                     for(Day.Meal m : foods){
                         now += m.getFood().getCalories() * m.getWeight();
                     }
+                    afterClick();
                 }
                 calNow.setText(now + " ккал");
                 int cal = (int) (day.getCaloriesTarget() * 0.25f);
@@ -58,6 +59,7 @@ public class FragmentButtonAddFood extends Fragment {
                     for(Day.Meal m : foods){
                         now += m.getFood().getCalories() * m.getWeight();
                     }
+                    afterClick();
                 }
                 calNow.setText(now + " ккал");
                 int cal = (int) (day.getCaloriesTarget() * 0.35f);
@@ -70,6 +72,7 @@ public class FragmentButtonAddFood extends Fragment {
                     for(Day.Meal m : foods){
                         now += m.getFood().getCalories() * m.getWeight();
                     }
+                    afterClick();
                 }
                 calNow.setText(now + " ккал");
                 int cal = (int) (day.getCaloriesTarget() * 0.25f);
@@ -82,6 +85,7 @@ public class FragmentButtonAddFood extends Fragment {
                     for(Day.Meal m : foods){
                         now += m.getFood().getCalories() * m.getWeight();
                     }
+                    afterClick();
                 }
                 calNow.setText(now + " ккал");
                 int cal = (int) (day.getCaloriesTarget() * 0.15f);

@@ -25,7 +25,7 @@ public class Day {
     private List<Meal> foods = new ArrayList<>();
 
     @Data
-    public class Meal{
+    public static class Meal{
         private MealType type;
         private Food food;
         private int weight;

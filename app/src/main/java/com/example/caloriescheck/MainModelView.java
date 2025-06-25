@@ -13,6 +13,8 @@ public class MainModelView extends ViewModel {
     private MutableLiveData<Day> day = new MutableLiveData<>();
     private MutableLiveData<List<Food>> listFoods = new MutableLiveData<>();
 
+    private MutableLiveData<List<Day.Meal>> listNeedToAddFoods = new MutableLiveData<>();
+
     public LiveData<Day> getCurrentDay() {
         return day;
     }
@@ -27,5 +29,13 @@ public class MainModelView extends ViewModel {
 
     public void setFoods(List<Food> foods) {
         listFoods.setValue(foods);
+    }
+
+    public LiveData<List<Day.Meal>> geNeedToAddFoods() {
+        return listNeedToAddFoods;
+    }
+
+    public void setNeedToAddFoods(List<Day.Meal> foods) {
+        listNeedToAddFoods.setValue(foods);
     }
 }
